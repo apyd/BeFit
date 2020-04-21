@@ -1,0 +1,40 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  display: flex;
+  margin: 10px;
+  padding: 5px;
+  align-items: center;
+  min-width: 400px;
+}
+
+input, select {
+  display: flex;
+  margin: 0 5px;
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+
+.btn {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  background-color: darkolivegreen;
+  color: white;
+}
+
+.star--red {
+  padding: 5px;
+  color: red;
+}
+
+.error-info {
+  background-color: red;
+  color: white;
+}

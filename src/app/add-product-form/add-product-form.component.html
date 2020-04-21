@@ -1,0 +1,40 @@
+<h1>Add product</h1>
+<form class="form" [formGroup]='addProductForm' (ngSubmit)="onSubmit()">
+  <label for="name">Name<span class="star--red">*</span>
+    <input type="text" id="name" formControlName="name">
+  </label>
+  <p class="error-info" *ngIf="addProductForm.controls.name.touched && addProductForm.controls.name.invalid">Name is required</p>
+  <label for="brand">Brand
+    <input type="text" id="brand" formControlName="brand" >
+  </label>
+  <label for="packageCapacity">Package has<span class="star--red">*</span>
+    <input type="text" id="packageCapacity" formControlName="packageCapacity">
+    <select name="unit" id="unity" formControlName="unit">
+      <option value="g" selected>g</option>
+      <option value="ml">ml</option>
+    </select>
+  </label>
+  <p class="error-info" *ngIf="addProductForm.controls.packageCapacity.touched && addProductForm.controls.packageCapacity.invalid">Package capacity is required</p>
+  <label for="caloricValue">Caloric value of food<span class="star--red">*</span>
+    <input type="text" id="caloricValue" formControlName="caloricValue">kcal
+  </label>
+  <p class="error-info" *ngIf="addProductForm.controls.caloricValue.touched && addProductForm.controls.caloricValue.invalid">Caloric value is required</p>
+  <label for="protein">Protein<span class="star--red">*</span>
+    <input type="text" id="protein" formControlName="protein">g
+  </label>
+  <p class="error-info" *ngIf="addProductForm.controls.protein.touched && addProductForm.controls.protein.invalid">Protein value is required</p>
+  <label for="carbohydrates">Carbohydrates<span class="star--red">*</span>
+    <input type="text" id="carbohydrates" formControlName="carbohydrates">g
+  </label>
+  <p class="error-info" *ngIf="addProductForm.controls.carbohydrates.touched && addProductForm.controls.carbohydrates.invalid">Carbohydrates value is required</p>
+  <label for="fat">Fat<span class="star--red">*</span>
+    <input type="text" id="fat" formControlName="fat">g
+  </label>
+  <p class="error-info" *ngIf="addProductForm.controls.fat.touched && addProductForm.controls.fat.invalid">Fat value is required</p>
+  <label for="barcode">Barcode
+    <input type="text" id="barcode" formControlName="barcode">
+    <button class="btn">Scan barcode</button>
+  </label>
+  <button class="btn" type="submit" [disabled]="!addProductForm.valid">Submit</button>
+</form>
+

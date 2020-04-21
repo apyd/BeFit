@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-around;
+  justify-items: flex-start;
+  align-items: baseline;
+  align-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+p {
+  display: flex;
+  padding: 0 10px;
+}
