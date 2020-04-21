@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "name": "Test1",
+      "brand": "Test1",
+      "packageCapacity": "11",
+      "unit": "g",
+      "caloricValue": "123213",
+      "protein": "12313",
+      "carbohydrates": "2212",
+      "fat": "2221",
+      "barcode": "1212",
+      "id": 1
+    },
+    {
+      "name": "Test2",
+      "brand": "",
+      "packageCapacity": "1232",
+      "unit": "g",
+      "caloricValue": "1231",
+      "protein": "1212",
+      "carbohydrates": "121",
+      "fat": "121",
+      "barcode": "",
+      "id": 2
+    }
+  ]
+}
